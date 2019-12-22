@@ -1,3 +1,11 @@
+const drinks = {
+  coctailOne: ['vodka', 'rum', 'beer', 'milk',],
+  coctailTwo: ['martini', 'beer', 'ice'],
+  coctailThree: ['vodka', 'beer', 'ice',],
+  coctailFour: ['milk', 'ice',],
+  coctailFive: ['vodka', 'rum', 'martini',],
+}
+
 const ingridientFinder = (...ingridient) => {
   const result = [];
   for (const item in drinks) {
