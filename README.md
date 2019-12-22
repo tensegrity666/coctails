@@ -1,4 +1,4 @@
-# Drink Finder.
+# Drink Finder
 
 The program implements the search for an alcoholic cocktail from the assortment based on the introduced ingredients.
 
