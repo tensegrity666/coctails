@@ -1,3 +1,5 @@
+'Use strict';
+
 const DRINKS = {
   coctailOne: ['vodka', 'rum', 'beer', 'milk',],
   coctailTwo: ['martini', 'beer', 'ice'],
@@ -21,4 +23,4 @@ const ingridientFinder = (...ingridient) => {
   return result;
 };
 
-console.dir(ingridientFinder('juice'));
+console.dir(ingridientFinder('vodka', 'rum', 'martini'));
