@@ -9,18 +9,18 @@ const DRINKS = {
 };
 
 const ingridientFinder = (...ingridient) => {
-  const result = [];
+  const result = new Set();
   for (const item in DRINKS) {
     const coctail = DRINKS[item];
-    coctail.filter( i => {
+    coctail.filter(i => {
       if (ingridient.includes(i)) {
-        result.push(item);
+        result.add(item);
       } else {
-        return [];
+        return result;
       };
     });
   };
   return result;
 };
 
-console.dir(ingridientFinder('vodka', 'rum', 'martini'));
+console.dir(ingridientFinder('vodka', 'beer'));
