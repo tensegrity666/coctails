@@ -12,8 +12,8 @@ const ingridientFinder = (...ingridient) => {
   const result = new Set();
   for (const item in DRINKS) {
     const coctail = DRINKS[item];
-    coctail.filter(i => {
-      if (ingridient.includes(i)) {
+    ingridient.filter(i => {
+      if (coctail.includes(i)) {
         result.add(item);
       } else {
         return result;
